@@ -1,0 +1,15 @@
+*.log
+/cache
+/config.php
+/config_override.php
+/.htaccess
+/custom/application
+/custom/history
+/custom/modules/*/Ext
+/custom/blowfish
+/custom/qr/*
+/upload/*
+/.DS_Store
+/custom/modules/Connectors/metadata/connectors.php
+/custom/errores_reasignacion/*
+/custom/modules/Connectors/metadata/connectors.php
