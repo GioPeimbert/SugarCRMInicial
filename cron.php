@@ -1,5 +1,7 @@
 <?php
 
+// Mi comentario
+
 use Sugarcrm\Sugarcrm\AccessControl\AdminWork;
 
 if (!defined('sugarEntry')) {
