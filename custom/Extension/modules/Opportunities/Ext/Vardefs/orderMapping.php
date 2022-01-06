@@ -1,5 +1,5 @@
 <?php
-// created: 2021-12-20 14:17:20
+// created: 2022-01-05 11:05:48
 $extensionOrderMap = array (
   'custom/Extension/modules/Opportunities/Ext/Vardefs/dupe_check.ext.php' => 
   array (
@@ -77,6 +77,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'fe0d87b5f2d3de58dc76887e453bd630',
     'mtime' => 1640031424,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Opportunities/Ext/Vardefs/full_text_search_admin.php' => 
+  array (
+    'md5' => '4780eda72b63160de7e0326a27eb7802',
+    'mtime' => 1640203671,
     'is_override' => false,
   ),
 );

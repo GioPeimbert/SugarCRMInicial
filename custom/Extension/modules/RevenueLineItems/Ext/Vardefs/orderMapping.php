@@ -1,5 +1,5 @@
 <?php
-// created: 2021-12-20 14:17:20
+// created: 2022-01-05 11:05:48
 $extensionOrderMap = array (
   'custom/Extension/modules/RevenueLineItems/Ext/Vardefs/rli_vardef.ext.php' => 
   array (
@@ -11,6 +11,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'd594402aef4035a25f74fd605e7d9655',
     'mtime' => 1640031424,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/RevenueLineItems/Ext/Vardefs/full_text_search_admin.php' => 
+  array (
+    'md5' => '3fbf489e08859b6b98c6a502ecd45bee',
+    'mtime' => 1640203671,
     'is_override' => false,
   ),
 );
