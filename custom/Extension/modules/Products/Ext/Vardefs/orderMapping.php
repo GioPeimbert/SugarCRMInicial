@@ -1,5 +1,5 @@
 <?php
-// created: 2021-12-20 14:17:20
+// created: 2022-01-05 11:05:48
 $extensionOrderMap = array (
   'custom/Extension/modules/Products/Ext/Vardefs/sugarfield_revenuelineitem_name.php' => 
   array (
@@ -11,6 +11,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '2a3f897badc8dea10f0118a72a2011d9',
     'mtime' => 1640031424,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Products/Ext/Vardefs/full_text_search_admin.php' => 
+  array (
+    'md5' => 'f93363046b56cd2e2214cdc5fcadf3bd',
+    'mtime' => 1640203671,
     'is_override' => false,
   ),
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2021-12-20 14:17:19
+// created: 2022-01-05 11:05:47
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/uk_UA.sugar_moduleList.php' => 
   array (
@@ -23,6 +23,18 @@ $extensionOrderMap = array (
   array (
     'md5' => '2cd4942476700317df3ca889feebbf58',
     'mtime' => 1640031431,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/uk_UA.sugar_calificacion_list.php' => 
+  array (
+    'md5' => '5660ca963b19868c4fc5f4fdaffbb90a',
+    'mtime' => 1640730860,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/uk_UA.sugar_ent_meses_list.php' => 
+  array (
+    'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
+    'mtime' => 1641331041,
     'is_override' => false,
   ),
 );
