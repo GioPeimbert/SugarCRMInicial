@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-04 17:28:24
+// created: 2022-01-20 15:46:30
 $searchFields['E2_properties'] = array (
   'name' => 
   array (

@@ -1,11 +1,5 @@
 ({
     extendsFrom: 'CreateView',
-    
-    /*
-    events: {
-        
-        'click $(".select2-choices")[2]': '_doDisabledAndEnabledOptions',
-    },*/
 
     initialize: function (options) {
 
@@ -21,13 +15,8 @@
         this.model.addValidationTask('check_share_commission_sale',_.bind(this._doValidateShareCommissionSale,this));
         this.model.addValidationTask('check_share_commission_inc',_.bind(this._doValidateShareCommissionInc,this));
 
-        //var inputOperation =  $("span[data-fieldname=ent_operation_mlddw]").find("input")[0];
-
-        //this.model.on('click:[data-name=tipo_de_operacion]',this._doDisabledAndEnabledOptions,this);
-        
-        //this.model.on('click:'+this.inputOperation+'\'',this._doDisabledAndEnabledOptions,this)
-
         this.model.on('change:ent_operation_mlddw',this._doDisabledAndEnabledOptions,this);    
+
     },
 
     //Validación No. 1
@@ -108,6 +97,9 @@
             }
 
             if(_.isEmpty(this.model.get('ent_deliveryyear_int')) && !_.isNumber(this.model.get('ent_deliveryyear_int'))){
+
+                console.log("ENTRO CONSTRUCCIÓN");
+                
                 errors['ent_deliveryyear_int'] = errors['ent_deliveryyear_int'] || {};
                 errors['ent_deliveryyear_int'].required = true;
             }
@@ -171,5 +163,6 @@
 
         }
 
-    },
+    }
+
 })

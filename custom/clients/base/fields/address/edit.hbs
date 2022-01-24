@@ -1,0 +1,35 @@
+<style>
+    option{
+        padding: 8px 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    option:hover{
+        background: #0679c8;
+        color: #fff;
+    }
+    select{
+        padding: 0px 0px;
+        border-top: none;
+        border-color: #0679c8;
+        overflow-y: auto;
+    }
+</style>
+<div class="record-label" data-name="state">
+    Estado
+</div>
+<input type="text" id="txtStates" name="states" placeholder="Seleccione un estado"/>
+<select name="select_option" id="select_option" style="display:none;width: 100%;"></select>
+<div class="record-label" data-name="municipality">
+    Municipio/Delegación
+</div>
+<input type="text" id="txtMunicipality" name="municipalities" disabled placeholder="Seleccione una delegación o municipio"/>
+<select name="select_municipality_option" id="select_municipality_option" style="display:none;width: 100%;"></select>
+<div class="record-label" data-name="colony">
+    Colonia
+</div>
+<input type="text" id="txtColony" name="colonies" class="prueba" disabled placeholder="Seleccione una colonia"/>
+<select name="select_colony_option" id="select_colony_option" style="display:none;width: 100%;"></select>
+

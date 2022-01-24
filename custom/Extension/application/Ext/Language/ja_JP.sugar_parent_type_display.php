@@ -1,5 +1,5 @@
 <?php
- // created: 2021-12-20 14:17:07
+ // created: 2022-01-07 22:00:28
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => '取引先',
@@ -19,4 +19,5 @@ $app_list_strings['parent_type_display']=array (
   'PurchasedLineItems' => '購入商品',
   'Purchases' => '購入',
   'RevenueLineItems' => '商談品目',
+  'E1_candidates' => 'Candidatos',
 );

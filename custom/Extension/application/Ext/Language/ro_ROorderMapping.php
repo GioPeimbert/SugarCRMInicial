@@ -1,15 +1,9 @@
 <?php
-// created: 2022-01-05 11:05:45
+// created: 2022-01-20 15:01:12
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/ro_RO.sugar_moduleList.php' => 
   array (
     'md5' => '5de2c813d2c9ac3086c5cecdd7e6d17c',
-    'mtime' => 1640031429,
-    'is_override' => false,
-  ),
-  'custom/Extension/application/Ext/Language/ro_RO.sugar_parent_type_display.php' => 
-  array (
-    'md5' => 'b8fa64ecb46059611d1005fc8cbfadb8',
     'mtime' => 1640031429,
     'is_override' => false,
   ),
@@ -35,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
     'mtime' => 1641331041,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/ro_RO.sugar_parent_type_display.php' => 
+  array (
+    'md5' => '42a83ff8ef9d6f0d9b32e6f5b2f35b27',
+    'mtime' => 1641614429,
     'is_override' => false,
   ),
 );

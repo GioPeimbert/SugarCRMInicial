@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-05 11:05:47
+// created: 2022-01-20 15:46:31
 $extensionOrderMap = array (
   'custom/Extension/modules/E1_candidates/Ext/Vardefs/e1_candidates_documents_E1_candidates.php' => 
   array (
@@ -13,28 +13,34 @@ $extensionOrderMap = array (
     'mtime' => 1640817624,
     'is_override' => false,
   ),
-  'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_averagetask_dec.php' => 
-  array (
-    'md5' => '29d841f81b20d54979350858c31529ac',
-    'mtime' => 1640818234,
-    'is_override' => false,
-  ),
-  'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_age_int.php' => 
-  array (
-    'md5' => '5ccdfd5e3b649f597bcfa85ec0f855ff',
-    'mtime' => 1640818969,
-    'is_override' => false,
-  ),
   'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_semester_ddw.php' => 
   array (
     'md5' => '7f46247fddf6c3bb105202c1a0dba168',
     'mtime' => 1640819068,
     'is_override' => false,
   ),
+  'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_age_int.php' => 
+  array (
+    'md5' => 'd3cdee9e348d103e13356aa6e2f388e4',
+    'mtime' => 1641570753,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_averagetask_dec.php' => 
+  array (
+    'md5' => 'a4d0c7fa786d9777c89fb75423cccb96',
+    'mtime' => 1641581792,
+    'is_override' => false,
+  ),
   'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_counttask_int.php' => 
   array (
-    'md5' => '6629c6dcd32d333937b21c2994644e25',
-    'mtime' => 1640899031,
+    'md5' => 'a6fdc5aa90be9074618e83cb4607ff82',
+    'mtime' => 1641581803,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/E1_candidates/Ext/Vardefs/sugarfield_ent_isnewtask_chk_c.php' => 
+  array (
+    'md5' => '7d72f61b16a5bf0862a6342beb085c69',
+    'mtime' => 1641834016,
     'is_override' => false,
   ),
 );

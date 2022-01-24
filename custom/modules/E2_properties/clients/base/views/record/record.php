@@ -266,60 +266,46 @@ array (
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
-            'name' => 'LBL_RECORDVIEW_PANEL3',
-            'label' => 'LBL_RECORDVIEW_PANEL3',
+            'name' => 'LBL_RECORDVIEW_PANEL19',
+            'label' => 'LBL_RECORDVIEW_PANEL19',
             'columns' => 2,
             'placeholders' => 1,
             'fields' => 
             array (
               0 => 
               array (
-                'readonly' => false,
-                'name' => 'ent_state_ddw',
-                'label' => 'LBL_ENT_STATE_DDW',
+                'name' => 'address',
+                'studio' => 'visible',
+                'label' => 'address',
                 'span' => 12,
               ),
               1 => 
               array (
                 'readonly' => false,
-                'name' => 'ent_municipality_ddw',
-                'label' => 'LBL_ENT_MUNICIPALITY_DDW',
+                'name' => 'ent_postalcode_txf_c',
+                'label' => 'LBL_ENT_POSTALCODE_TXF',
                 'span' => 12,
               ),
               2 => 
-              array (
-                'readonly' => false,
-                'name' => 'ent_colony_ddw',
-                'label' => 'LBL_ENT_COLONY_DDW',
-                'span' => 12,
-              ),
-              3 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_street_txf',
                 'label' => 'LBL_ENT_STREET_TXF',
                 'span' => 12,
               ),
-              4 => 
+              3 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_number_txf',
                 'label' => 'LBL_ENT_NUMBER_TXF',
               ),
-              5 => 
+              4 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_interior_txf',
                 'label' => 'LBL_ENT_INTERIOR_TXF',
               ),
-              6 => 
-              array (
-                'readonly' => false,
-                'name' => 'ent_code_int',
-                'label' => 'LBL_ENT_CODE_INT',
-                'span' => 12,
-              ),
-              7 => 
+              5 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_reference_txa',
@@ -330,6 +316,39 @@ array (
             ),
           ),
           5 => 
+          array (
+            'newTab' => false,
+            'panelDefault' => 'expanded',
+            'name' => 'LBL_RECORDVIEW_PANEL20',
+            'label' => 'LBL_RECORDVIEW_PANEL20',
+            'columns' => 2,
+            'placeholders' => 1,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'readonly' => false,
+                'name' => 'ent_statea_txf_c',
+                'label' => 'LBL_ENT_STATEA_TXF',
+                'span' => 12,
+              ),
+              1 => 
+              array (
+                'readonly' => false,
+                'name' => 'ent_amunicipality_txf_c',
+                'label' => 'LBL_ENT_AMUNICIPALITY_TXF',
+                'span' => 12,
+              ),
+              2 => 
+              array (
+                'readonly' => false,
+                'name' => 'ent_acolony_txf_c',
+                'label' => 'LBL_ENT_ACOLONY_TXF',
+                'span' => 12,
+              ),
+            ),
+          ),
+          6 => 
           array (
             'newTab' => true,
             'panelDefault' => 'expanded',
@@ -345,7 +364,7 @@ array (
               ),
             ),
           ),
-          6 => 
+          7 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -383,7 +402,7 @@ array (
               ),
             ),
           ),
-          7 => 
+          8 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -445,7 +464,7 @@ array (
               ),
             ),
           ),
-          8 => 
+          9 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -464,7 +483,7 @@ array (
               ),
             ),
           ),
-          9 => 
+          10 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -484,7 +503,7 @@ array (
               ),
             ),
           ),
-          10 => 
+          11 => 
           array (
             'newTab' => true,
             'panelDefault' => 'expanded',
@@ -502,7 +521,7 @@ array (
               ),
             ),
           ),
-          11 => 
+          12 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -521,7 +540,7 @@ array (
               ),
             ),
           ),
-          12 => 
+          13 => 
           array (
             'newTab' => true,
             'panelDefault' => 'expanded',
@@ -537,7 +556,7 @@ array (
               ),
             ),
           ),
-          13 => 
+          14 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -556,7 +575,7 @@ array (
               ),
             ),
           ),
-          14 => 
+          15 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -583,7 +602,7 @@ array (
               ),
             ),
           ),
-          15 => 
+          16 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -655,7 +674,7 @@ array (
               ),
             ),
           ),
-          16 => 
+          17 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -727,7 +746,7 @@ array (
               ),
             ),
           ),
-          17 => 
+          18 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',

@@ -36,6 +36,7 @@ $dependencies['E2_properties']['age_status_new_conditions'] = array(
     ),
 );
 
+/*
 $dependencies['E2_properties']['presale_commission_conditions'] = array(
     'hooks' => array("edit"),
     'trigger' => 'true',
@@ -54,7 +55,7 @@ $dependencies['E2_properties']['presale_commission_conditions'] = array(
             ),
         ),
     ),
-);
+);*/
 
 $dependencies['E2_properties']['sale_commission_conditions'] = array(
     'hooks' => array("edit"),
