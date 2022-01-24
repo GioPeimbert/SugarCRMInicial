@@ -1,5 +1,5 @@
 <?php
- // created: 2021-12-20 14:17:11
+ // created: 2022-01-07 22:00:30
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => 'Контрагент',
@@ -19,4 +19,5 @@ $app_list_strings['parent_type_display']=array (
   'PurchasedLineItems' => 'Куплений продукт',
   'Purchases' => 'Покупка',
   'RevenueLineItems' => 'Доходи за продукти',
+  'E1_candidates' => 'Candidatos',
 );

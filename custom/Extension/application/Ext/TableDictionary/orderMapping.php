@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-05 11:05:51
+// created: 2022-01-20 15:46:33
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/TableDictionary/mp_peliculas_mp_actores_1.php' => 
   array (
@@ -35,6 +35,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'c4832f24a814743add67efcdbdb5772e',
     'mtime' => 1640816836,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/TableDictionary/e3_books_e3_authors.php' => 
+  array (
+    'md5' => 'ac4fbd5849b0bf1d812a9e413b56f1f9',
+    'mtime' => 1642110165,
     'is_override' => false,
   ),
 );

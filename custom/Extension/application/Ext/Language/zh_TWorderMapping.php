@@ -1,15 +1,9 @@
 <?php
-// created: 2022-01-05 11:05:45
+// created: 2022-01-20 15:01:12
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/zh_TW.sugar_moduleList.php' => 
   array (
     'md5' => '71e0d2df3d2315e10cca129839fb98b6',
-    'mtime' => 1640031429,
-    'is_override' => false,
-  ),
-  'custom/Extension/application/Ext/Language/zh_TW.sugar_parent_type_display.php' => 
-  array (
-    'md5' => 'ac91dc33aa1f68d9d57850dfca73406c',
     'mtime' => 1640031429,
     'is_override' => false,
   ),
@@ -35,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
     'mtime' => 1641331041,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/zh_TW.sugar_parent_type_display.php' => 
+  array (
+    'md5' => '5d09efa3af4d3c1dce58bc019dbe7227',
+    'mtime' => 1641614429,
     'is_override' => false,
   ),
 );

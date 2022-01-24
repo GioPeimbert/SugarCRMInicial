@@ -1,15 +1,9 @@
 <?php
-// created: 2022-01-05 11:05:43
+// created: 2022-01-20 15:01:12
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/hr_HR.sugar_moduleList.php' => 
   array (
     'md5' => '0e301d7b1ead674d14222a3d351d6647',
-    'mtime' => 1640031426,
-    'is_override' => false,
-  ),
-  'custom/Extension/application/Ext/Language/hr_HR.sugar_parent_type_display.php' => 
-  array (
-    'md5' => 'b6ad0b252823fb42ab97ad6224a99980',
     'mtime' => 1640031426,
     'is_override' => false,
   ),
@@ -35,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
     'mtime' => 1641331041,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/hr_HR.sugar_parent_type_display.php' => 
+  array (
+    'md5' => 'dd2dd36af9a6d8133853859dea068edc',
+    'mtime' => 1641614428,
     'is_override' => false,
   ),
 );

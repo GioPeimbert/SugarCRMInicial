@@ -1,15 +1,9 @@
 <?php
-// created: 2022-01-05 11:05:43
+// created: 2022-01-20 15:01:12
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/he_IL.sugar_moduleList.php' => 
   array (
     'md5' => '6651da22a8cda952de804e4c519d3be2',
-    'mtime' => 1640031426,
-    'is_override' => false,
-  ),
-  'custom/Extension/application/Ext/Language/he_IL.sugar_parent_type_display.php' => 
-  array (
-    'md5' => '6edf40a173cc82846725fdb7b9286a27',
     'mtime' => 1640031426,
     'is_override' => false,
   ),
@@ -35,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
     'mtime' => 1641331041,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/he_IL.sugar_parent_type_display.php' => 
+  array (
+    'md5' => 'd9d6f24bd917de24ab608c83233bf125',
+    'mtime' => 1641614428,
     'is_override' => false,
   ),
 );

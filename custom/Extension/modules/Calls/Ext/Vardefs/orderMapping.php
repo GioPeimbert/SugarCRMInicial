@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-05 11:05:47
+// created: 2022-01-20 15:46:31
 $extensionOrderMap = array (
   'custom/Extension/modules/Calls/Ext/Vardefs/rli_link_workflow.php' => 
   array (
@@ -11,6 +11,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'dd9347a40140218ebf4697ec33de705c',
     'mtime' => 1640203671,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Calls/Ext/Vardefs/sugarfield_ent_verification_chk_c.php' => 
+  array (
+    'md5' => '64a3a8c86ec4a14e67e0405f57ec03d9',
+    'mtime' => 1641930167,
     'is_override' => false,
   ),
 );

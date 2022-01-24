@@ -1,15 +1,9 @@
 <?php
-// created: 2022-01-05 11:05:44
+// created: 2022-01-20 15:01:12
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/ko_KR.sugar_moduleList.php' => 
   array (
     'md5' => '510b5eeffa63b2c6916e35c97ef52273',
-    'mtime' => 1640031427,
-    'is_override' => false,
-  ),
-  'custom/Extension/application/Ext/Language/ko_KR.sugar_parent_type_display.php' => 
-  array (
-    'md5' => '572d01893c09e12eaad0d00de7e404cd',
     'mtime' => 1640031427,
     'is_override' => false,
   ),
@@ -35,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'e3351857ae64ae0663aa0cf283bdf801',
     'mtime' => 1641331041,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/ko_KR.sugar_parent_type_display.php' => 
+  array (
+    'md5' => 'b2f8f87b28ad2977f2c17e961135e10b',
+    'mtime' => 1641614428,
     'is_override' => false,
   ),
 );

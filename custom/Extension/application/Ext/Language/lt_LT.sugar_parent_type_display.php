@@ -1,5 +1,5 @@
 <?php
- // created: 2021-12-20 14:17:07
+ // created: 2022-01-07 22:00:28
 
 $app_list_strings['parent_type_display']=array (
   'Accounts' => 'Sąskaita',
@@ -19,4 +19,5 @@ $app_list_strings['parent_type_display']=array (
   'PurchasedLineItems' => 'Pirkimo eilutės prekė',
   'Purchases' => 'Pirkimas',
   'RevenueLineItems' => 'Pajamų eilutės prekės',
+  'E1_candidates' => 'Candidatos',
 );
