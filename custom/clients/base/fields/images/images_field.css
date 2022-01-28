@@ -1,0 +1,39 @@
+#images-details-container{
+    position: relative;
+}
+#image-container{
+    width: 100%;
+    height: 100%;
+}
+.container-button-styles{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    background: linear-gradient(to bottom, #AFAFAF, transparent);
+}
+.button-styles{
+    margin: 10px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.icon-styles{
+    height: 100%;
+    color: white;
+}
+.data-container{
+    position: absolute;
+}
+.images-styles{
+    height: 100%;
+    width: 100%;
+}
+.icon-styles:hover{
+    color: black;
+}
+.data-image-container{
+    height: 250px;
+    margin-bottom: 10px;
+}
+.row-fluid [class*="span"] {
+    margin-left: 0px;
+}

@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../SugarCRM/CIFplugin/css/jquery.Jcrop.min.css" type="text/css">
+<link rel="stylesheet" href="../SugarCRM/CIFplugin/css/custominputfile.min.css">
+<link rel="stylesheet" href="/SugarCRM/custom/clients/base/fields/images/images_field.css">
+
+<div id="panel-images-container">
+    <div class="row-fluid">
+        <div id="drag-drop-container" class="span6 record-cell">
+            <input type="file" id="images-input" name="images-input">
+        </div>
+        {{#if isEdit}}
+            <div id="established-images" class="span6 record-cell">
+                    {{#each images_array}}
+                        <div id="{{name}}" class="span6 record-cell data-image-container">
+                            <div id="btn-container" class="container-button-styles">
+                                <button id="btn-/{{name}}" class="fa fa-times button-styles icon-styles"></button>
+                            </div>
+                            <div id="image-container">
+                                <img src="{{description}}" class="images-styles">
+                            </div>
+                        </div>
+                    {{/each}}
+            </div>
+        {{/if}}
+    </div>
+</div>
+
