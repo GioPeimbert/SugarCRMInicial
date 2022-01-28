@@ -284,28 +284,30 @@ array (
                 'readonly' => false,
                 'name' => 'ent_postalcode_txf_c',
                 'label' => 'LBL_ENT_POSTALCODE_TXF',
-                'span' => 12,
               ),
               2 => 
+              array (
+              ),
+              3 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_street_txf',
                 'label' => 'LBL_ENT_STREET_TXF',
                 'span' => 12,
               ),
-              3 => 
+              4 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_number_txf',
                 'label' => 'LBL_ENT_NUMBER_TXF',
               ),
-              4 => 
+              5 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_interior_txf',
                 'label' => 'LBL_ENT_INTERIOR_TXF',
               ),
-              5 => 
+              6 => 
               array (
                 'readonly' => false,
                 'name' => 'ent_reference_txa',
@@ -368,6 +370,25 @@ array (
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
+            'name' => 'LBL_RECORDVIEW_PANEL21',
+            'label' => 'LBL_RECORDVIEW_PANEL21',
+            'columns' => 2,
+            'placeholders' => 1,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'images',
+                'studio' => 'visible',
+                'label' => 'images',
+                'span' => 12,
+              ),
+            ),
+          ),
+          8 => 
+          array (
+            'newTab' => false,
+            'panelDefault' => 'expanded',
             'name' => 'LBL_RECORDVIEW_PANEL4',
             'label' => 'LBL_RECORDVIEW_PANEL4',
             'columns' => 2,
@@ -402,7 +423,7 @@ array (
               ),
             ),
           ),
-          8 => 
+          9 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -464,7 +485,7 @@ array (
               ),
             ),
           ),
-          9 => 
+          10 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -483,7 +504,7 @@ array (
               ),
             ),
           ),
-          10 => 
+          11 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -503,7 +524,7 @@ array (
               ),
             ),
           ),
-          11 => 
+          12 => 
           array (
             'newTab' => true,
             'panelDefault' => 'expanded',
@@ -521,7 +542,7 @@ array (
               ),
             ),
           ),
-          12 => 
+          13 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -540,7 +561,7 @@ array (
               ),
             ),
           ),
-          13 => 
+          14 => 
           array (
             'newTab' => true,
             'panelDefault' => 'expanded',
@@ -556,7 +577,7 @@ array (
               ),
             ),
           ),
-          14 => 
+          15 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -575,7 +596,7 @@ array (
               ),
             ),
           ),
-          15 => 
+          16 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -602,7 +623,7 @@ array (
               ),
             ),
           ),
-          16 => 
+          17 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -674,7 +695,7 @@ array (
               ),
             ),
           ),
-          17 => 
+          18 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',
@@ -746,7 +767,7 @@ array (
               ),
             ),
           ),
-          18 => 
+          19 => 
           array (
             'newTab' => false,
             'panelDefault' => 'expanded',

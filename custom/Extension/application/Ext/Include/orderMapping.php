@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-20 15:46:31
+// created: 2022-01-27 15:54:55
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Include/rli_unhide.ext.php' => 
   array (
@@ -29,6 +29,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '8c96eea842dea81fe8ea619dde58bcd2',
     'mtime' => 1642110160,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Include/modulo_imagenes.php' => 
+  array (
+    'md5' => 'f1c527ff72ebf79a7cc900c48b16e61c',
+    'mtime' => 1643142562,
     'is_override' => false,
   ),
 );

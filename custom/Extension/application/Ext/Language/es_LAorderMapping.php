@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-20 15:01:13
+// created: 2022-01-27 17:05:33
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/es_LA.sugar_moduleList.php' => 
   array (
@@ -59,6 +59,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '3726e9c3b894a833ceb7cc5ceeaf6ce6',
     'mtime' => 1642110157,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/es_LA.modulo_imagenes.php' => 
+  array (
+    'md5' => '22778efe697ae97ef58e2db062317564',
+    'mtime' => 1643142558,
     'is_override' => false,
   ),
 );

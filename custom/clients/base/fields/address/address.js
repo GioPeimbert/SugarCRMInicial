@@ -32,24 +32,16 @@
      */
     _render: function() {
         this._super('_render');
-        console.log("SE EJECUTA RENDER");
 
         $('div[data-name="address"]')[1].style.display="none";
         $('div[data-panelname="LBL_RECORDVIEW_PANEL20"]')[0].style.display = "none";
 
         if(this.model.get("ent_statea_txf_c")!=""){
-            console.log("ES UNA EDICIÓN");
 
             $('#txtStates').val(this.model.get("ent_statea_txf_c"));
             $('#txtMunicipality').val(this.model.get("ent_amunicipality_txf_c"));
             $('#txtColony').val(this.model.get("ent_acolony_txf_c"));
             $("span[data-fieldname=address]").children().show()
-
-            /*if($(".detail.hide")[2]){
-                console.log("SPAN ESTABA ESCONDIDO");
-                //$(".detail.hide")[2].style.display="block";
-                $("span[data-fieldname=address]").children().show()
-            }*/
 
         }
     },
@@ -72,25 +64,15 @@
 
     bindDataChange: function () {
     
-        //this.model.on('change:' + this.name, function () {
-            /*if (this.action !== 'edit') {
-                // this.render();
-            }*/
-        //}, this);
     },
 
     _doSetDirectionValues:function(){
 
-        console.log("SETEO DE DATOS");
-        console.log("ESTADO: "+this.model.get("ent_statea_txf_c"));
         $('#txtStates').val(this.model.get("ent_statea_txf_c"));
-        console.log("ESTADO INPUT: "+$('#txtStates').val());
         $('#txtMunicipality').val(this.model.get("ent_amunicipality_txf_c"));
         $('#txtColony').val(this.model.get("ent_acolony_txf_c"));
 
         if($(".detail.hide")[2]){
-            console.log("SPAN ESTABA ESCONDIDO");
-            //$(".detail.hide")[2].style.display="block";
             $("span[data-fieldname=address]").children().show()
         }
 
@@ -99,8 +81,6 @@
     _doValidateEmptyInputState: function(fields,errors,callback){
 
         if($('#txtStates').val()==""){
-            
-            console.log("ESTÁ VACÍO CAMPO ESTADOS");
 
             app.alert.show('empty-states', {
                 level: 'error',
@@ -121,8 +101,6 @@
 
         if($('#txtMunicipality').val()=="" && !$('#txtMunicipality').prop("disabled")){
 
-            console.log("ESTÁ VACÍO CAMPO MUNICIPIOS");
-
             app.alert.show('empty-municipality', {
                 level: 'error',
                 messages: 'Favor de seleccionar un municipio'
@@ -141,8 +119,6 @@
     _doValidateEmptyInputColony: function(fields,errors,callback){
 
         if($('#txtColony').val()=="" && !$('#txtColony').prop("disabled")){
-
-            console.log("ESTÁ VACÍO CAMPO COLONIAS");
 
             app.alert.show('empty-colony', {
                 level: 'error',
@@ -167,7 +143,6 @@
         if(state_to_find != ""){
 
             $('#txtStates').css('border-color','transparent');
-            console.log("ESTADO A BUSCAR: "+state_to_find);
 
             clearTimeout(this.timeToWaitState)
 
@@ -179,19 +154,13 @@
                 app.api.call('GET',url,{},{
                     
                     success:function(data){
-
-                        console.log("CONEXIÓN CORRECTA");
-                        console.log("DATA: "+data);
-
                         //Vaciamos select
                         $('#select_option').empty();
-                        //$('#states_list').empty();
                         if(data.length>0){
                          
                             for(var i=0;i<data.length;i++){
                                 console.log("ENTRO A FOR");
                                 $("#select_option").append("<option value='"+data[i]['name']+"'>"+data[i]['name']+"</option>");
-                                //$("#states_list").append("<option>"+data[i]['name']+"</option>");
                             }
     
                             $('#select_option').attr('size',3);
@@ -242,15 +211,12 @@
 
     //Mostrar municipios
     _doGetMunicipalities: function(){
-        console.log("CARACTER INGRESADO MUNICIPIO");
 
         var state = $("#txtStates").val();
         var municipality_to_find = $("#txtMunicipality").val();
         if(municipality_to_find != ""){
             $('#txtMunicipality').css('border-color','transparent');
             if(state != ""){
-                
-                console.log("MUNICIPIO A BUSCAR: "+municipality_to_find);
 
                 var url = app.api.buildURL('Municipality/'+state+'/'+municipality_to_find);
                     app.alert.show('alert-search', {
@@ -261,18 +227,13 @@
                         
                         success:function(data){
 
-                            console.log("CONEXIÓN CORRECTA");
-                            console.log("DATA: "+data);
-
                             //Vaciamos select
                             $('#select_municipality_option').empty();
-                            //$('#states_list').empty();
                             if(data.length>0){
                             
                                 for(var i=0;i<data.length;i++){
                                     console.log("ENTRO A FOR");
                                     $("#select_municipality_option").append("<option value='"+data[i]['name']+"'>"+data[i]['name']+"</option>");
-                                    //$("#states_list").append("<option>"+data[i]['name']+"</option>");
                                 }
         
                                 $('#select_municipality_option').attr('size',3);
@@ -304,7 +265,6 @@
                 });
             }
         }else{
-            console.log("MUNICIPIO VACÍO");
             $('#select_municipality_option').css('display','none');
             this.model.set("ent_amunicipality_txf_c","");
 
