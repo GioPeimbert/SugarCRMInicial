@@ -9,6 +9,18 @@
          
     },
 
+
+    /**
+     * Called when rendering the field
+     * @private
+     */
+     _render: function() {
+        this._super('_render');
+
+        console.log("RENDER MÓDULO LIBROS");
+
+    },
+
     _doGetInfoAboutBooks:function(){
 
         var id_book = this.model.get('tct_id_libro_txf');

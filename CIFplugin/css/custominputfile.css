@@ -45,10 +45,12 @@
 .cif-file-container.cif-container-all-type .cif-file-size{opacity:.8}
 
 /*Container Image*/
-.cif-file-container.cif-container-image-type .cif-file-row{border-bottom:1px solid #f2f2f2; padding: 20px 0}
-.cif-file-container.cif-container-image-type .cif-parent{padding-top:30px;}
+.cif-file-row{padding: 0px}
+.cif-file-container.cif-container-image-type {border-bottom:1px solid #f2f2f2; padding: 20px 0}
+/*.cif-file-container.cif-container-image-type .cif-parent{padding-top:30px;}*/
+.cif-file-container.cif-container-image-type {padding-top:30px;}
 .cif-file-container.cif-container-image-type .cif-close{top: 5px}
-.cif-img{max-height:300px; max-width:380px;}
+.cif-img{/*max-height:300px; max-width:380px;*/width: 100%;}
 
 /*message*/
 #cif-msg-wr{font-size:13px; position:fixed; z-index:10000; top: 100px ; right:20px; max-width:50%;padding:15px; background: #fff; border:1px solid #dfdfdf; box-shadow:3px 3px 6px rgba(0,0,0,.5)}

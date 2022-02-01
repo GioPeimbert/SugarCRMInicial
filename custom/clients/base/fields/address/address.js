@@ -24,6 +24,7 @@
         this.events['click select[name=select_colony_option]'] = '_doGetColonyChosen';
 
         this.model.on('sync', this._doSetDirectionValues, this);
+
     },
 
     /**
@@ -32,6 +33,8 @@
      */
     _render: function() {
         this._super('_render');
+
+        console.log("RENDER DE DOMICILIO");
 
         $('div[data-name="address"]')[1].style.display="none";
         $('div[data-panelname="LBL_RECORDVIEW_PANEL20"]')[0].style.display = "none";
@@ -44,6 +47,14 @@
             $("span[data-fieldname=address]").children().show()
 
         }
+
+        if($('#map').is(":visible")){
+
+            this.initMap();
+
+        }
+
+
     },
 
     /**
@@ -64,6 +75,28 @@
 
     bindDataChange: function () {
     
+    },
+    
+    initMap:function(){
+        // The location of Mexico City
+        const uluru = { lat: 19.432015741818123, lng: -99.13823449135951 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+
+        google.maps.event.addListener(map, 'click', function(event) {
+            console.log("LONGITUD: "+event.latLng.lat());
+            console.log("LATITUD:"+ event.latLng.lng());
+            var marker = new google.maps.Marker({
+                position: event.latLng, 
+                map: map
+            });
+          
+            map.setCenter(event.latLng);
+        });
+        
     },
 
     _doSetDirectionValues:function(){

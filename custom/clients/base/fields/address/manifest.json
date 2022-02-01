@@ -1,0 +1,3 @@
+{
+    "content_security_policy": "script-src 'self' https://maps.googleapis.com https://maps.gstatic.com; object-src 'self'"
+}

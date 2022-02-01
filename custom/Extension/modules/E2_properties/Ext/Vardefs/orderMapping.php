@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-27 15:54:55
+// created: 2022-01-31 17:25:38
 $extensionOrderMap = array (
   'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_preservation_ddw.php' => 
   array (
@@ -137,6 +137,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '293cf1cc98ace3e316fc41d6cdd26298',
     'mtime' => 1643142687,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_propertie_location_c.php' => 
+  array (
+    'md5' => 'bba592d4a4a4b540e689ffcf5258648e',
+    'mtime' => 1643408557,
     'is_override' => false,
   ),
 );
