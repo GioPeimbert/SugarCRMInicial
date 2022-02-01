@@ -27,3 +27,4 @@ $mod_strings['LBL_ENT_AMUNICIPALITY_TXF'] = 'Municipio auxiliar';
 $mod_strings['LBL_ENT_ACOLONY_TXF'] = 'Colonia auxiliar';
 $mod_strings['LBL_ENT_POSTALCODE_TXF'] = 'Código Postal';
 $mod_strings['LBL_RECORDVIEW_PANEL21'] = 'Vistas';
+$mod_strings['LBL_ENT_PROPERTIE_LOCATION'] = 'Locación';

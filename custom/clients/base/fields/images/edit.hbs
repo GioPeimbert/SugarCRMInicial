@@ -3,12 +3,12 @@
 <link rel="stylesheet" href="/SugarCRM/custom/clients/base/fields/images/images_field.css">
 
 <div id="panel-images-container">
-    <div class="row-fluid">
-        <div id="drag-drop-container" class="span6 record-cell">
+    <!--<div class="row-fluid">-->
+        <div id="drag-drop-container" class="span12">
             <input type="file" id="images-input" name="images-input">
         </div>
         {{#if isEdit}}
-            <div id="established-images" class="span6 record-cell">
+            <div id="established-images" class="span12" style="margin-top: 10px;">
                     {{#each images_array}}
                         <div id="{{name}}" class="span6 record-cell data-image-container">
                             <div id="btn-container" class="container-button-styles">
@@ -21,6 +21,6 @@
                     {{/each}}
             </div>
         {{/if}}
-    </div>
+    <!--</div>-->
 </div>
 

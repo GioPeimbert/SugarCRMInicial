@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-27 15:54:49
+// created: 2022-01-31 17:25:33
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/de_DE.sugar_moduleList.php' => 
   array (
