@@ -15,27 +15,37 @@
         border-top: none;
         border-color: #0679c8;
         overflow-y: auto;
+        width: 100%;
     }
     #map {
-        height: 400px;
-        width: 100%;
+        height: 250px;
+        width: 50%;
+        margin-left: 10px;
     }
 </style>
 
-<div class="record-label" data-name="state">
-    Estado
+<div id="address-custom-container" class="span6">
+    <div class="record-label" data-name="state">
+        Estado
+    </div>
+    <input type="text" id="txtStates" name="states"  disabled />
+    <!--<select name="states" id="select_state" disabled></select>
+    <input type="text" id="txtStates" name="states" placeholder="Seleccione un estado"/>
+    <select name="select_option" id="select_option" style="display:none;width: 100%;"></select>-->
+    <div class="record-label" data-name="municipality">
+        Municipio/Delegación
+    </div>
+    <input type="text" id="txtMunicipality" name="municipalities" disabled />
+    <!--<select name="states" id="select_municipality" disabled></select>
+    <input type="text" id="txtMunicipality" name="municipalities" disabled placeholder="Seleccione una delegación o municipio"/>
+    <select name="select_municipality_option" id="select_municipality_option" style="display:none;width: 100%;"></select>-->
+    <div class="record-label" data-name="colony">
+        Colonia
+    </div>
+    <input type="text" id="txtColony" name="colonies" disabled />
+    <!--<select name="states" id="select_colony" disabled></select>
+    <input type="text" id="txtColony" name="colonies" class="prueba" disabled placeholder="Seleccione una colonia"/>
+    <select name="select_colony_option" id="select_colony_option" style="display:none;width: 100%;"></select>-->
 </div>
-<input type="text" id="txtStates" name="states" placeholder="Seleccione un estado"/>
-<select name="select_option" id="select_option" style="display:none;width: 100%;"></select>
-<div class="record-label" data-name="municipality">
-    Municipio/Delegación
-</div>
-<input type="text" id="txtMunicipality" name="municipalities" disabled placeholder="Seleccione una delegación o municipio"/>
-<select name="select_municipality_option" id="select_municipality_option" style="display:none;width: 100%;"></select>
-<div class="record-label" data-name="colony">
-    Colonia
-</div>
-<input type="text" id="txtColony" name="colonies" class="prueba" disabled placeholder="Seleccione una colonia"/>
-<select name="select_colony_option" id="select_colony_option" style="display:none;width: 100%;"></select>
-<div id="map">
+<div id="map" class="span6">
 </div>

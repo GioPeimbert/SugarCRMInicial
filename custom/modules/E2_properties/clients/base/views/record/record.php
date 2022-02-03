@@ -348,6 +348,18 @@ array (
                 'label' => 'LBL_ENT_ACOLONY_TXF',
                 'span' => 12,
               ),
+              3 => 
+              array (
+                'readonly' => false,
+                'name' => 'ent_alatitude_txf_c',
+                'label' => 'LBL_ENT_ALATITUDE_TXF',
+              ),
+              4 => 
+              array (
+                'readonly' => false,
+                'name' => 'ent_alongitude_txf_c',
+                'label' => 'LBL_ENT_ALONGITUDE_TXF',
+              ),
             ),
           ),
           6 => 

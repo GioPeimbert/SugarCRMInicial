@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-31 17:25:37
+// created: 2022-02-03 15:25:16
 $extensionOrderMap = array (
   'custom/Extension/modules/E2_properties/Ext/Language/es_LA.modulo_imagenes.php' => 
   array (
@@ -9,8 +9,8 @@ $extensionOrderMap = array (
   ),
   'custom/Extension/modules/E2_properties/Ext/Language/es_LA.lang.php' => 
   array (
-    'md5' => '27838c164dbe5398f02eb5ec3732ef00',
-    'mtime' => 1643408188,
+    'md5' => 'ba912de8394dae10c7e38d9adeccc238',
+    'mtime' => 1643823838,
     'is_override' => false,
   ),
 );
