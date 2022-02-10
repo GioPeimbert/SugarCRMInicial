@@ -1,29 +1,4 @@
-<style>
-    option{
-        padding: 8px 10px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    option:hover{
-        background: #0679c8;
-        color: #fff;
-    }
-    select{
-        padding: 0px 0px;
-        border-top: none;
-        border-color: #0679c8;
-        overflow-y: auto;
-        width: 100%;
-    }
-    #map {
-        height: 250px;
-        width: 50%;
-        margin-left: 10px;
-    }
-</style>
-
+<link rel="stylesheet" href="/SugarCRM/custom/clients/base/fields/address/address_field.css">
 <div id="address-custom-container" class="span6">
     <div class="record-label" data-name="state">
         Estado
@@ -47,5 +22,11 @@
     <input type="text" id="txtColony" name="colonies" class="prueba" disabled placeholder="Seleccione una colonia"/>
     <select name="select_colony_option" id="select_colony_option" style="display:none;width: 100%;"></select>-->
 </div>
+<input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Ingresar dirección"
+    />
 <div id="map" class="span6">
 </div>
