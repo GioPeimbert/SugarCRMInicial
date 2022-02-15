@@ -29,9 +29,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'modulo_imagenes',
-  'published_date' => '2022-01-25 20:31:22',
+  'published_date' => '2022-02-11 20:41:01',
   'type' => 'module',
-  'version' => 1643142682,
+  'version' => 1644612062,
   'remove_tables' => 'prompt',
 );
 

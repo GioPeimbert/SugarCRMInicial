@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="custom/clients/base/views/relationships-accounts/relationships-accounts.css">
+<div id="calls-container" class="modules-containers">
+    <div class="header-container">
+        <h4>Llamadas</h4>
+    </div>
+    <div class="body-container">
+        <table id="calls-table" class="table table-striped dataTable table-header">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="sorting orderByname">Asunto</th>
+                    <th class="sorting orderBystatus">Estado</th>
+                    <th class="sorting orderBydate_start">Fecha de inicio</th>
+                    <th class="sorting orderBydate_end">Fecha fin</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each calls}}
+                    <tr class="row-{{id}}">
+                        <td><button id="btnCallDelete_{{id}}" class="buttonCall-delete-styles">Eliminar</button></td>
+                        <td><input type="text" id="txtCall-name-{{id}}" name="name_Calls_{{id}}" value="{{name}}"></td>
+                        <td>
+                            <select name="status_Calls_{{id}}" id="slcCall-status-{{id}}" class="status-select">
+                                {{#each ../status_calls_array}}
+                                    {{#ifStatus ../status @key}}
+                                        <option value="{{@key}}" selected>{{this}}</option>
+                                    {{else}}
+                                        <option value="{{@key}}">{{this}}</option>
+                                    {{/ifStatus}}
+                                {{/each}}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="txtCallDaStart-{{id}}" name="dateStart_Calls_{{id}}" class="date-input dateTime-input" value="{{getDate date_start}}" readonly>
+                            <input type="text" id="txtCallTiStart-{{id}}" name="timeStart_Calls_{{id}}" class="time-input dateTime-input" value="{{getTime date_start}}">
+                        </td>
+                        <td>
+                            <input type="text" id="txtCallDaEnd-{{id}}" name="dateEnd_Calls_{{id}}" class="date-input dateTime-input" value="{{getDate date_end}}" readonly>
+                            <input type="text" id="txtCallTiEnd-{{id}}" name="timeEnd_Calls_{{id}}" class="time-input dateTime-input" value="{{getTime date_end}}">
+                        </td>
+                        <td><button id="btnEdit-Calls_{{id}}" class="buttonCall-edit-styles">Actualizar</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="meetings-container" class="modules-containers">
+    <div class="header-container">
+        <h4>Reuniones</h4>
+    </div>
+    <div class="body-container">
+        <table id="meetings-table" class="table table-striped dataTable table-header">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="sorting orderByname">Asunto</th>
+                    <th class="sorting orderBystatus">Estado</th>
+                    <th class="sorting orderBydate_start">Fecha de inicio</th>
+                    <th class="sorting orderBydate_end">Fecha fin</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each meetings}}
+                    <tr class="row-{{id}}">
+                        <td><button id="btnMeetingsDelete_{{id}}" class="buttonMeetings-delete-styles">Eliminar</button></td>
+                        <td><input type="text" id="txtMeetingsName-{{id}}" name="name_Meetings_{{id}}" value="{{name}}"></td>
+                        <td>
+                            <select name="status_Meetings_{{id}}" id="slcMeetingsStatus-{{id}}" class="status-select">
+                                {{#each ../status_meetings_array}}
+                                    {{#ifStatus ../status @key}}
+                                        <option value="{{@key}}" selected>{{this}}</option>
+                                    {{else}}
+                                        <option value="{{@key}}">{{this}}</option>
+                                    {{/ifStatus}}
+                                {{/each}}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="txtMeetingsDaStart-{{id}}" name="dateStart_Meetings_{{id}}" class="date-input dateTime-input" value="{{getDate date_start}}" readonly>
+                            <input type="text" id="txtMeetingsTiStart-{{id}}" name="timeStart_Meetings_{{id}}" class="time-input dateTime-input" value="{{getTime date_start}}">
+                        </td>
+                        <td>
+                            <input type="text" id="txtMeetingsDaEnd-{{id}}" name="dateEnd_Meetings_{{id}}" class="date-input dateTime-input" value="{{getDate date_end}}" readonly>
+                            <input type="text" id="txtMeetingsTiEnd-{{id}}" name="timeEnd_Meetings_{{id}}" class="time-input dateTime-input" value="{{getTime date_end}}">
+                        </td>
+                        <td><button id="btnEdit-Meetings_{{id}}" class="buttonMeetings-edit-styles">Actualizar</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="tasks-container" class="modules-containers">
+    <div class="header-container">
+        <h4>Tareas</h4>
+    </div>
+    <div class="body-container">
+        <table id="tasks-table" class="table table-striped dataTable table-header">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="sorting orderByname">Asunto</th>
+                    <th class="sorting orderBystatus">Estado</th>
+                    <th class="sorting orderBydate_start">Fecha de inicio</th>
+                    <th class="sorting orderBydate_due">Fecha de vencimiento</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each tasks}}
+                    <tr class="row-{{id}}">
+                        <td><button id="btnTasksDelete_{{id}}" class="buttonTasks-delete-styles">Eliminar</button></td>
+                        <td><input type="text" id="txtTasksName-{{id}}" name="name_Tasks_{{id}}" value="{{name}}"></td>
+                        <td>
+                            <select name="status_Tasks_{{id}}" id="slcTasksStatus-{{id}}" class="status-select">
+                                {{#each ../status_tasks_array}}
+                                    {{#ifStatus ../status @key}}
+                                        <option value="{{@key}}" selected>{{this}}</option>
+                                    {{else}}
+                                        <option value="{{@key}}">{{this}}</option>
+                                    {{/ifStatus}}
+                                {{/each}}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="txtTasksDaStart-{{id}}" name="dateStart_Tasks_{{id}}" class="date-input dateTime-input" value="{{getDate date_start}}" readonly>
+                            <input type="text" id="txtTasksTiStart-{{id}}" name="timeStart_Tasks_{{id}}" class="time-input dateTime-input" value="{{getTime date_start}}">
+                        </td>
+                        <td>
+                            <input type="text" id="txtTasksDaEnd-{{id}}" name="dateEnd_Tasks_{{id}}" class="date-input dateTime-input" value="{{getDate date_due}}" readonly>
+                            <input type="text" id="txtTasksTiEnd-{{id}}" name="timeEnd_Tasks_{{id}}" class="time-input dateTime-input" value="{{getTime date_due}}">
+                        </td>
+                        <td><button id="btnEdit-Tasks_{{id}}" class="buttonTasks-edit-styles">Actualizar</button></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
