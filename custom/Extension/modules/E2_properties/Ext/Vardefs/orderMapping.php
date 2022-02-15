@@ -1,5 +1,5 @@
 <?php
-// created: 2022-01-31 17:25:38
+// created: 2022-02-15 10:08:39
 $extensionOrderMap = array (
   'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_preservation_ddw.php' => 
   array (
@@ -91,12 +91,6 @@ $extensionOrderMap = array (
     'mtime' => 1642712228,
     'is_override' => false,
   ),
-  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_postalcode_txf_c.php' => 
-  array (
-    'md5' => 'c3d533a6456f14526fbd4c34792c33b5',
-    'mtime' => 1642712471,
-    'is_override' => false,
-  ),
   'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_commission_ddw.php' => 
   array (
     'md5' => '2c65593bd405f1177f25afd6d85fb825',
@@ -139,10 +133,22 @@ $extensionOrderMap = array (
     'mtime' => 1643142687,
     'is_override' => false,
   ),
-  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_propertie_location_c.php' => 
+  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_alongitude_txf_c.php' => 
   array (
-    'md5' => 'bba592d4a4a4b540e689ffcf5258648e',
-    'mtime' => 1643408557,
+    'md5' => 'e0ccd10e883e0ac5914f9286a9910e0b',
+    'mtime' => 1643838632,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_alatitude_txf_c.php' => 
+  array (
+    'md5' => 'e6ad73a684bcb2439243e9f46f9b342f',
+    'mtime' => 1643838653,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/E2_properties/Ext/Vardefs/sugarfield_ent_postalcode_txf_c.php' => 
+  array (
+    'md5' => 'cc3741c1231899997e7db8b8024693d1',
+    'mtime' => 1643923440,
     'is_override' => false,
   ),
 );

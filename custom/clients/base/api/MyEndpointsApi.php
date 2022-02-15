@@ -118,6 +118,50 @@ class MyEndpointsApi extends SugarApi
                 //long help to be displayed in the help documentation
                 'longHelp' => '',
             ),
+            'GetDirectionsByCoordinates' => array(
+                //request type
+                'reqType' => 'GET',
+
+                //set authentication
+                'noLoginRequired' => false,
+
+                //endpoint path
+                'path' => array('Coordinates', '?','?'),
+
+                //endpoint variables
+                'pathVars' => array('methodName','longitude','latitude'),
+
+                //method to call
+                'method' => 'getDirectionByCoordinates',
+
+                //short help string to be displayed in the help documentation
+                'shortHelp' => 'Se consume el servicio de geocoding, para obtener la dirección según las coordenadas ingresadas',
+
+                //long help to be displayed in the help documentation
+                'longHelp' => '',
+            ),
+            /*'GetCoordinatesByDirection' => array(
+                //request type
+                'reqType' => 'GET',
+
+                //set authentication
+                'noLoginRequired' => false,
+
+                //endpoint path
+                'path' => array('Direction', '?','?','?'),
+
+                //endpoint variables
+                'pathVars' => array('methodName','state','municipality','colony'),
+
+                //method to call
+                'method' => 'getCoordinatesByDirection',
+
+                //short help string to be displayed in the help documentation
+                'shortHelp' => 'Se consume el servicio de geocoding, para obtener la coordenadas según la dirección ingresada',
+
+                //long help to be displayed in the help documentation
+                'longHelp' => '',
+            ),*/
         );
     }
 
@@ -219,6 +263,72 @@ class MyEndpointsApi extends SugarApi
         return $colonies;
 
     }
+
+    public function getDirectionByCoordinates($api,$args){
+        $geocoding_url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='.$args['longitude'].','.$args['latitude'].'&key=AIzaSyARC0Hhjg-LU4agdBJqYMhLwwRiC0enIfM';
+
+        $GLOBALS['log']->fatal("URL: ".$geocoding_url);
+
+        $directions = $this->getNewCallsFromAPIWithoutQueryAppend($geocoding_url);
+
+        return $directions;
+
+    }
+
+    /*public function getCoordinatesByDirection($api,$args){
+        $geocoding_coordinates_url = 'https://maps.googleapis.com/maps/api/geocode/json?address='.$args['state'].'+'$args['municipality'].'+'.$args['colony']+55728&key=AIzaSyARC0Hhjg-LU4agdBJqYMhLwwRiC0enIfM'
+    }*/
+
+    private function getNewCallsFromAPIWithoutQueryAppend($url, $oauthtoken = '', $type = 'GET', $arguments = array(), $encodeData = true, $returnHeaders = false){
+
+        $type = strtoupper($type);
+        /*if ($type == 'GET') {
+            $url .= "?" . http_build_query($arguments);
+        }
+        $GLOBALS['log']->fatal("URL CALL: ".$url);*/
+
+        //$url .= "?" . http_build_query('access_token=bbd6aea9-c264-4b45-b4d3-c7941f2af9e');
+        $curl_request = curl_init($url);
+        if ($type == 'POST') {
+            curl_setopt($curl_request, CURLOPT_CUSTOMREQUEST, 'POST');
+        } elseif ($type == 'PUT') {
+            curl_setopt($curl_request, CURLOPT_CUSTOMREQUEST, "PUT");
+        } elseif ($type == 'DELETE') {
+            curl_setopt($curl_request, CURLOPT_CUSTOMREQUEST, "DELETE");
+        }
+        curl_setopt($curl_request, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
+        curl_setopt($curl_request, CURLOPT_HEADER, $returnHeaders);
+        curl_setopt($curl_request, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($curl_request, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl_request, CURLOPT_FOLLOWLOCATION, 0);
+        if (!empty($arguments) && $type !== 'GET') {
+            if ($encodeData) {
+                //encode the arguments as JSON
+                $arguments = json_encode($arguments);
+            }
+            curl_setopt($curl_request, CURLOPT_POSTFIELDS, $arguments);
+            curl_setopt($curl_request, CURLOPT_HTTPHEADER, array(
+                    'Content-Type: application/json',
+                    'authorization:'.$oauthtoken
+            ));
+        }
+        $result = curl_exec($curl_request);
+        if ($returnHeaders) {
+            //set headers from response
+            list($headers, $content) = explode("\r\n\r\n", $result, 2);
+            foreach (explode("\r\n", $headers) as $header) {
+                header($header);
+            }
+            //return the nonheader data
+            return trim($content);
+        }
+        curl_close($curl_request);
+        //decode the response from JSON
+        $response = json_decode($result,true);
+        return $response;
+
+    }
+
 
     private function getInformationFromAPI($url, $oauthtoken = '', $type = 'GET', $arguments = array(), $encodeData = true, $returnHeaders = false){
 

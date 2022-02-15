@@ -1,0 +1,17 @@
+.status-select{
+    width: 100%
+}
+.dataTable td{
+    max-width: 200px !important;
+}
+.dateTime-input{
+    width: 100px !important;
+}
+.modules-containers{
+    overflow-x: auto;
+    max-height: 200px;
+    margin-top: 20px;
+}
+.table-header{
+    border-top: 1px solid;
+}
